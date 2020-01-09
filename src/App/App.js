@@ -1,10 +1,23 @@
 import React from 'react';
+
+import Portal from '../Portal/index.';
+
 import './App.css';
+import Lesson from '../Context';
+
 
 function App() {
   return (
     <div className="App">
-      HELLO
+
+      /*portal*/
+      <Portal>
+        Portal Children
+      </Portal>
+
+      /*context*/
+      <Lesson/>
+
     </div>
   );
 }
